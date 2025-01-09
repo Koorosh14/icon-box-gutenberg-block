@@ -1,4 +1,4 @@
-.fdwpbp-tab-group {
+.sanibgb-tab-group {
 	display: block;
 	float: left;
 	width: 100%;
@@ -9,7 +9,7 @@
 	background-color: transparent;
 }
 
-.fdwpbp-tab {
+.sanibgb-tab {
 	float: left;
 	margin: 0;
 	padding-right: 30px;
@@ -17,19 +17,19 @@
 	background-color: transparent;
 }
 
-.rtl .fdwpbp-tab {
+.rtl .sanibgb-tab {
 	float: right;
 	width: 312px;
 	padding-right: 0;
 	padding-left: 30px;
 }
 
-.fdwpbp-tab li {
+.sanibgb-tab li {
 	position: relative;
 	margin: 0;
 }
 
-.fdwpbp-tab li .active {
+.sanibgb-tab li .active {
 	filter: unset;
 	border-radius: 2px;
 	box-shadow: 0px 2px 4px rgb(0 0 0 / 8%);
@@ -37,7 +37,7 @@
 	background: #FFFFFF;
 }
 
-.fdwpbp-tab li a {
+.sanibgb-tab li a {
 	display: flex;
 	margin: 0 -1px 0px 0;
 	padding: 13px 14px;
@@ -52,11 +52,11 @@
 	transition: 0.2s;
 }
 
-.rtl .fdwpbp-tab li a {
+.rtl .sanibgb-tab li a {
 	margin: 0 0 0 -1px;
 }
 
-.fdwpbp-tab-content {
+.sanibgb-tab-content {
 	display: grid;
 	min-height: 680px;
 	margin: 0 6px 0 30px;
@@ -66,11 +66,11 @@
 	background-color: #fff;
 }
 
-.rtl .fdwpbp-tab-content {
+.rtl .sanibgb-tab-content {
 	margin: 0 30px 0 0;
 }
 
-.fdwpbp-tab-content tr.tr-header th {
+.sanibgb-tab-content tr.tr-header th {
 	color: #ffffff;
 	padding: 14px 12px 12px 12px;
 	white-space: nowrap;
@@ -78,7 +78,7 @@
 	font-weight: bold;
 }
 
-.fdwpbp-tab-content tr th label {
+.sanibgb-tab-content tr th label {
 	padding: 16px;
 	color: #000000;
 	white-space: nowrap;

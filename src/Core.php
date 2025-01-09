@@ -1,6 +1,6 @@
 <?php
 
-namespace WordPressBoilerplatePlugin;
+namespace SanIconBoxBlock;
 
 class Core
 {
@@ -16,11 +16,7 @@ class Core
 
 	public function __construct()
 	{
-		Model::getInstance();
 		Asset::getInstance();
-
-		if (is_admin())
-			Setting::getInstance();
 
 		add_action('plugins_loaded', [$this, 'i18n']);
 	}
@@ -34,7 +30,7 @@ class Core
 	 */
 	public function url($path = '')
 	{
-		return untrailingslashit(FDWPBP_URL . $path);
+		return untrailingslashit(SANIBGB_URL . $path);
 	}
 
 	/**
@@ -46,17 +42,7 @@ class Core
 	 */
 	public function dir($path = '')
 	{
-		return untrailingslashit(FDWPBP_DIR . $path);
-	}
-
-	/**
-	 * Returns `Model` class.
-	 *
-	 * @return	Model
-	 */
-	public function model()
-	{
-		return Model::getInstance();
+		return untrailingslashit(SANIBGB_DIR . $path);
 	}
 
 	/**
@@ -85,7 +71,7 @@ class Core
 	public function option($optionName)
 	{
 		if (empty($this->options))
-			$this->options = get_option(FDWPBP_SETTINGS_SLUG . '_options');
+			$this->options = get_option(SANIBGB_SETTINGS_SLUG . '_options');
 
 		return isset($this->options[$optionName]) ? $this->options[$optionName] : null;
 	}
@@ -97,6 +83,6 @@ class Core
 	 */
 	public function i18n()
 	{
-		load_plugin_textdomain('wordpress-boilerplate-plugin', false, basename(FDWPBP_DIR) . DIRECTORY_SEPARATOR . 'languages');
+		load_plugin_textdomain('san-icon-box-block', false, basename(SANIBGB_DIR) . DIRECTORY_SEPARATOR . 'languages');
 	}
 }

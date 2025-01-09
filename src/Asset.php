@@ -1,6 +1,6 @@
 <?php
 
-namespace WordPressBoilerplatePlugin;
+namespace SanIconBoxBlock;
 
 class Asset
 {
@@ -29,9 +29,9 @@ class Asset
 	 */
 	public function enqueueAdminScripts($hookSuffix)
 	{
-		wp_enqueue_style('fdwpbp_admin', FDWPBP()->url('assets/admin/css/admin.css'), [], FDWPBP_VERSION);
+		wp_enqueue_style('sanibgb_admin', SANIBGB()->url('assets/admin/css/admin.css'), [], SANIBGB_VERSION);
 
-		wp_enqueue_script('fdwpbp_admin', FDWPBP()->url('assets/admin/js/admin.js'), [], FDWPBP_VERSION, true);
+		wp_enqueue_script('sanibgb_admin', SANIBGB()->url('assets/admin/js/admin.js'), [], SANIBGB_VERSION, true);
 	}
 
 	/**
@@ -43,8 +43,8 @@ class Asset
 	 */
 	public function enqueuePublicScripts()
 	{
-		wp_enqueue_style('fdwpbp_public', FDWPBP()->url('assets/public/css/public.css'), [], FDWPBP_VERSION);
+		wp_enqueue_style('sanibgb_public', SANIBGB()->url('assets/public/css/public.css'), [], SANIBGB_VERSION);
 
-		wp_enqueue_script('fdwpbp_public', FDWPBP()->url('assets/public/js/public.js'), [], FDWPBP_VERSION, true);
+		wp_enqueue_script('sanibgb_public', SANIBGB()->url('assets/public/js/public.js'), [], SANIBGB_VERSION, true);
 	}
 }
