@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 3,
+	"name": "sanibgb/san-icon-box",
+	"version": "1.0.0",
+	"title": "Icon Box",
+	"description": "Displays visually appealing icon boxes with customizable icons, titles, and content.",
+	"category": "common",
+	"keywords": [
+		"segal afzar nadin",
+		"icon",
+		"box"
+	],
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "san-icon-box-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

@@ -1,0 +1,13 @@
+{
+	"name": "san-icon-box",
+	"version": "1.0.0",
+	"description": "Displays a Gutenberg block that allows users to create visually appealing Icon Boxes with customizable icons, titles, and content.",
+	"author": "Koorosh14",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php --webpack-src-dir=assets/blocks/src --output-path=assets/blocks/build",
+		"start": "wp-scripts start --webpack-copy-php --webpack-src-dir=assets/blocks/src --output-path=assets/blocks/build"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.8.1"
+	}
+}

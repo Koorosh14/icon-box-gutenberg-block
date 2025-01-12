@@ -17,6 +17,7 @@ class Core
 	public function __construct()
 	{
 		Asset::getInstance();
+		Block::getInstance();
 
 		add_action('plugins_loaded', [$this, 'i18n']);
 	}
