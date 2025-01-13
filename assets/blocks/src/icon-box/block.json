@@ -19,6 +19,9 @@
 		"title": {
 			"type": "string"
 		},
+		"iconUrl": {
+			"type": "string"
+		},
 		"content": {
 			"type": "string"
 		},

@@ -1,12 +1,12 @@
 import { __ } from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
-import { InspectorControls, RichText } from '@wordpress/block-editor';
-import { PanelBody, ColorPalette } from '@wordpress/components';
+import { InspectorControls, RichText, MediaUpload } from '@wordpress/block-editor';
+import { PanelBody, ColorPalette, Button } from '@wordpress/components';
 
 // Edit component for the Icon Box block
 export default function Edit({ attributes, setAttributes })
 {
-	const { title, content, titleColor, contentColor } = attributes;
+	const { title, iconUrl, content, titleColor, contentColor } = attributes;
 
 	return (
 		<div {...useBlockProps()}>
@@ -18,7 +18,7 @@ export default function Edit({ attributes, setAttributes })
 						</label>
 						<ColorPalette
 							value={titleColor}
-							onChange={(newColor) => setAttributes({ titleColor: newColor })}
+							onChange={newColor => setAttributes({ titleColor: newColor })}
 						/>
 					</div>
 
@@ -28,7 +28,7 @@ export default function Edit({ attributes, setAttributes })
 						</label>
 						<ColorPalette
 							value={contentColor}
-							onChange={(newColor) => setAttributes({ contentColor: newColor })}
+							onChange={newColor => setAttributes({ contentColor: newColor })}
 						/>
 					</div>
 				</PanelBody>
@@ -42,6 +42,18 @@ export default function Edit({ attributes, setAttributes })
 					onChange={newTitle => setAttributes({ title: newTitle })}
 					style={{ color: titleColor }}
 				/>
+
+				<div className="icon-container">
+					<MediaUpload
+						value={iconUrl}
+						onSelect={newMedia => setAttributes({ iconUrl: newMedia.url })}
+						render={({ open }) => (
+							<Button onClick={open}>
+								{__('Upload Icon', 'san-icon-box-block')}
+							</Button>
+						)}
+					/>
+				</div>
 
 				<RichText
 					tagName="p"

@@ -33,6 +33,7 @@ function Edit({
 }) {
   const {
     title,
+    iconUrl,
     content,
     titleColor,
     contentColor
@@ -74,6 +75,20 @@ function Edit({
         style: {
           color: titleColor
         }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: "icon-container",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.MediaUpload, {
+          value: iconUrl,
+          onSelect: newMedia => setAttributes({
+            iconUrl: newMedia.url
+          }),
+          render: ({
+            open
+          }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
+            onClick: open,
+            children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Upload Icon', 'san-icon-box-block')
+          })
+        })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
         tagName: "p",
         value: content,
@@ -196,7 +211,7 @@ module.exports = window["wp"]["i18n"];
   \***********************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://json.schemastore.org/block.json","apiVersion":3,"name":"sanibgb/san-icon-box","version":"1.0.0","title":"Icon Box","description":"Displays visually appealing icon boxes with customizable icons, titles, and content.","category":"common","keywords":["segal afzar nadin","icon","box"],"example":{},"supports":{"html":false},"attributes":{"title":{"type":"string"},"content":{"type":"string"},"titleColor":{"type":"string","default":"#000000"},"contentColor":{"type":"string","default":"#666666"}},"textdomain":"san-icon-box-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","viewScript":"file:./view.js","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://json.schemastore.org/block.json","apiVersion":3,"name":"sanibgb/san-icon-box","version":"1.0.0","title":"Icon Box","description":"Displays visually appealing icon boxes with customizable icons, titles, and content.","category":"common","keywords":["segal afzar nadin","icon","box"],"example":{},"supports":{"html":false},"attributes":{"title":{"type":"string"},"iconUrl":{"type":"string"},"content":{"type":"string"},"titleColor":{"type":"string","default":"#000000"},"contentColor":{"type":"string","default":"#666666"}},"textdomain":"san-icon-box-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","viewScript":"file:./view.js","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ })
 
