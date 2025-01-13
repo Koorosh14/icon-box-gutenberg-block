@@ -21,6 +21,14 @@
 		},
 		"content": {
 			"type": "string"
+		},
+		"titleColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"contentColor": {
+			"type": "string",
+			"default": "#666666"
 		}
 	},
 	"textdomain": "san-icon-box-block",
