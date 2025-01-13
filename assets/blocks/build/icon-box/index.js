@@ -90,7 +90,7 @@ function Edit({
             onClick: open,
             children: !iconUrl ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Upload Icon', 'san-icon-box-block') : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
               src: iconUrl,
-              width: "256",
+              width: "128",
               alt: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Icon', 'san-icon-box-block'),
               title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Click to replace icon', 'san-icon-box-block')
             })

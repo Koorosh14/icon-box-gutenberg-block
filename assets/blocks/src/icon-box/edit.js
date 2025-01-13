@@ -52,7 +52,7 @@ export default function Edit({ attributes, setAttributes })
 							<Button
 								className={iconUrl ? 'image-button' : 'button button-large'}
 								onClick={open}>
-								{!iconUrl ? __('Upload Icon', 'san-icon-box-block') : <img src={iconUrl} width="256" alt={__('Icon', 'san-icon-box-block')} title={__('Click to replace icon', 'san-icon-box-block')} />}
+								{!iconUrl ? __('Upload Icon', 'san-icon-box-block') : <img src={iconUrl} width="128" alt={__('Icon', 'san-icon-box-block')} title={__('Click to replace icon', 'san-icon-box-block')} />}
 							</Button>
 						)}
 					/>

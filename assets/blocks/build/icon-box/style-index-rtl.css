@@ -1,9 +1,38 @@
 /*!**************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./assets/blocks/src/icon-box/style.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************************/
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
+.wp-block-sanibgb-san-icon-box {
+  margin: 20px 0 !important;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+.wp-block-sanibgb-san-icon-box .icon-box-content {
+  text-align: center;
+}
+.wp-block-sanibgb-san-icon-box .icon-box-content h3 {
+  margin: 10px 0;
+  font-size: 2em;
+}
+.wp-block-sanibgb-san-icon-box .icon-box-content .icon-container {
+  margin: 15px;
+}
+.wp-block-sanibgb-san-icon-box .icon-box-content .icon-container img {
+  max-width: 128px;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .wp-block-sanibgb-san-icon-box {
+    padding: 15px;
+  }
+  .wp-block-sanibgb-san-icon-box .icon-container img {
+    max-width: 64px;
+  }
+  .wp-block-sanibgb-san-icon-box h3 {
+    font-size: 1em;
+  }
+  .wp-block-sanibgb-san-icon-box p {
+    font-size: 0.75em;
+  }
+}

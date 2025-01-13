@@ -1,6 +1,41 @@
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
+.wp-block-sanibgb-san-icon-box {
+	margin: 20px 0 !important;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	background: #ffffff;
+
+	.icon-box-content {
+		text-align: center;
+
+		h3 {
+			margin: 10px 0;
+			font-size: 2em;
+		}
+
+		.icon-container {
+			margin: 15px;
+
+			img {
+				max-width: 128px;
+				height: 100%;
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 15px;
+
+		.icon-container img {
+			max-width: 64px;
+		}
+
+		h3 {
+			font-size: 1em;
+		}
+
+		p {
+			font-size: 0.75em;
+		}
+	}
+}
