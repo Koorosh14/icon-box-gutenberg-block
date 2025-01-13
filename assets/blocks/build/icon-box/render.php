@@ -1,7 +1,12 @@
 <?php
 
-/**
- * @see	https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
- */
+$title   = !empty($attributes['title']) ? esc_html($attributes['title']) : '';
+$content = !empty($attributes['content']) ? wp_kses_post($attributes['content']) : '';
 
-echo 'Example';
+?>
+<div <?php echo get_block_wrapper_attributes(['class' => 'icon-box-block']); ?>>
+	<div class="icon-box-content">
+		<h3><?php echo $title; ?></h3>
+		<p><?php echo $content; ?></p>
+	</div>
+</div>
