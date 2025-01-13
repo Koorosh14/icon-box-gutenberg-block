@@ -40,6 +40,7 @@ export default function Edit({ attributes, setAttributes })
 					value={title}
 					placeholder={__('Enter title...', 'san-icon-box-block')}
 					onChange={newTitle => setAttributes({ title: newTitle })}
+					style={{ color: titleColor }}
 				/>
 
 				<RichText
@@ -47,6 +48,7 @@ export default function Edit({ attributes, setAttributes })
 					value={content}
 					placeholder={__('Enter content...', 'san-icon-box-block')}
 					onChange={newContent => setAttributes({ content: newContent })}
+					style={{ color: contentColor }}
 				/>
 			</div>
 		</div>

@@ -70,14 +70,20 @@ function Edit({
         placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Enter title...', 'san-icon-box-block'),
         onChange: newTitle => setAttributes({
           title: newTitle
-        })
+        }),
+        style: {
+          color: titleColor
+        }
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
         tagName: "p",
         value: content,
         placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Enter content...', 'san-icon-box-block'),
         onChange: newContent => setAttributes({
           content: newContent
-        })
+        }),
+        style: {
+          color: contentColor
+        }
       })]
     })]
   });
