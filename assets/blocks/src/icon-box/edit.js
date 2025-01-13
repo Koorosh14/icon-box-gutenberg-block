@@ -46,10 +46,13 @@ export default function Edit({ attributes, setAttributes })
 				<div className="icon-container">
 					<MediaUpload
 						value={iconUrl}
+						allowedTypes={['image']}
 						onSelect={newMedia => setAttributes({ iconUrl: newMedia.url })}
 						render={({ open }) => (
-							<Button onClick={open}>
-								{__('Upload Icon', 'san-icon-box-block')}
+							<Button
+								className={iconUrl ? 'image-button' : 'button button-large'}
+								onClick={open}>
+								{!iconUrl ? __('Upload Icon', 'san-icon-box-block') : <img src={iconUrl} width="256" alt={__('Icon', 'san-icon-box-block')} title={__('Click to replace icon', 'san-icon-box-block')} />}
 							</Button>
 						)}
 					/>
